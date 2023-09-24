@@ -5,7 +5,7 @@ function threeSum(arr, target) {
 	for(let i=0; i<n-2; i++){
 		let t = arr[i] + arr[i+1] + arr[i+2];
 		if(Math.abs(t-target) < sum){
-			sum = Math.abs(t-target);
+			sum = t
 		}
 	}
 	return sum;
